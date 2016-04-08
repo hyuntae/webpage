@@ -1,0 +1,82 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+
+    <script type="text/javascript">
+	   function showhide(event) {
+       var e = document.getElementById(event);
+       e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+ 	   }
+    </script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <title>Weightless</title>
+</head>
+
+    <body style="background-color:beige">   
+    <div class="ui top fixed menu">
+    <div class="item">
+        <img src="img/bicycle.png">
+    </div>   
+        <a href="index.html" class="item">Home</a>
+        <a href="dietroutine.html" class="item">Diet & Routine</a>
+        <a href="drinks.html" class="item">Drinks</a>
+        <a href="about.html" class="item">About</a>
+        
+    </div><br><br>
+    
+    <h2 class="ui center aligned icon header">
+        <i class="circular food icon"></i>
+        Weightless
+    </h2>
+    <h3><strong><center>Para generar una rutina de ejercicios y dieta adecuada, Por favor, ingrese sus datos:</center></strong></h3><br>
+    
+    <center>
+    <div class="ui right labeled input">
+        <input type="text" placeholder="Enter your name"> 
+        <div class="ui basic label">
+            name
+        </div>
+        </div><br><br>
+        
+    <div class="ui right labeled input">
+        <input type="text" placeholder="Male / Female"> 
+        <div class="ui basic label">
+            gender
+        </div>
+        </div><br><br>
+        
+     <div class="ui right labeled input">
+        <input type="text" placeholder="Enter your age"> 
+        <div class="ui basic label">
+            years
+        </div>
+        </div><br><br>  
+        
+    <div class="ui right labeled input">
+        <input type="text" placeholder="Enter your weight">
+        <div class="ui basic label">
+            kg
+        </div>
+        </div><br><br>
+
+    <div class="ui right labeled input">
+        <input type="text" placeholder="Enter your height">
+        <div class="ui basic label">
+            cm
+        </div><br><br>            
+    </div>
+    <br><br>
+    <button class="ui blue basic button">Generate</button>
+    <!--<input type="submit" name="mysubmit" value="Click!" />
+    <input type="submit" value="Go to my link location" 
+    onclick="window.location='/my/link/location';" />  -->
+</center>
+    
+    
+        
+        
+        
+</body>
+</html>
