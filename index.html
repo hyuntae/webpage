@@ -3,7 +3,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
-
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    <script src="anijs-min.js"></script>
     <script type="text/javascript">
 	   function showhide(event) {
        var e = document.getElementById(event);
@@ -26,12 +27,10 @@
         
     </div><br><br>    
     
-    <h2 class="ui center aligned icon header">
-        <i class="circular food icon"></i>
-        Weightless
-    </h2><br>
     
-    <center><div class="ui billboard test ad" data-text="Billboard"></div></center>
+    <center><header data-anijs="if: click, do: bounceIn animated">
+        <img src="img/test.png" height="210", width="1300">
+    </header></center>
     
     <div class="ui internally celled grid">
         <div class="row">
