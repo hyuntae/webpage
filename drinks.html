@@ -1,191 +1,91 @@
-<!DOCTYPE>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
     <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <script type="text/javascript">
-	   function showhide(event) {
-       var e = document.getElementById(event);
-       e.style.display = (e.style.display == 'block') ? 'none' : 'block';
- 	   }
-    </script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="semantic/dist/semantic.min.js"></script>
-    <title>Weightless!</title>
-</head>
+    <script src="anijs-min.js"></script>
 
-    <body style="background-color:beige">   
-    <div class="ui top fixed menu">
-    <div class="item">
-        <img src="img/bicycle.png">
-    </div>   
-        <a href="index.html" class="item">Home</a>
-        <a href="dietroutine.html" class="item">Diet & Routine</a>
-        <a href="drinks.html" class="item">Drinks</a>
-        <a href="about.html" class="item">About</a>
-        
-    </div><br><br>
-    
-    <h2 class="ui center aligned icon header">
-        <i class="circular food icon"></i>
-        Weightless
-    </h2><br><br>
-    
-    <center><div class="ui grid">
-  <div class="four wide column"><div class="ui card">
-  <div class="ui slide masked reveal image">
-    <img src="img/greentea.png" class="visible content">
-    <img src="img/greentea2.png" class="hidden content">
-  </div>
-  <div class="content">
-    <a class="header">Green Tea</a>
-    <div class="meta">
-      <span class="date">Helps reduce risk of osteoporosis, cancer, heart disease, and cavities. Green tea contains a rich concentration of flavonoids and polyphenols, natural antioxidants that may protect cells from carcinogens (cancer-causing substances) and inhibit tumor growth by helping to neutralize free radicals in the body. The tea's antioxidants may also guard against heart disease by relaxing blood vessels, inhibiting the formation of blood clots that trigger heart attacks and strokes. Green tea also contains fluoride, which strengthens teeth; the flavonoids may build up bones as well, reducing the risk of osteoporosis and tooth decay.</span>
-    </div>
-  </div>
-  <div class="extra content">
-    <a>
-      <i class="coffee icon"></i>
-    </a>
-  </div>
-</div></div>
 
-  <div class="four wide column"><div class="ui card">
-  <div class="ui slide masked reveal image">
-    <img src="img/soymilk2.gif" class="visible content">
-    <img src="img/soymilk.jpg" class="hidden content">
-  </div>
-  <div class="content">
-    <a class="header">Soy Milk</a>
-    <div class="meta">
-      <span class="date">Lowers risk of heart disease. Soy milk contains soluble fiber and soy protein, which lowers LDL (bad) cholesterol levels and triglycerides, reducing the risk of cardiovascular disease. If you're drinking it instead of cow's milk, buy soy milk fortified with calcium and vitamins A and D. One caveat: Soy contains phytoestrogens, which may be linked to an increased risk of breast cancer. Talk to your doctor about drinking soy milk if you have a family history of the disease or have had it yourself.</span>
-    </div>
-  </div>
-  <div class="extra content">
-    <a>
-      <i class="bar icon"></i>
-    </a>
-  </div>
-</div></div>
+    <title>Weightless</title>
 
-  <div class="four wide column"><div class="ui card">
-  <div class="ui slide masked reveal image">
-    <img src="img/minttea2.png" class="visible content">
-    <img src="img/minttea.jpg" class="hidden content">
-  </div>
-  <div class="content">
-    <a class="header">Mint Tea</a>
-    <div class="meta">
-      <span class="date">Eases cramps and helps ward off indigestion. "Mint is an antispasmodic, so it can relax muscles, which combats stiffness and aches," says Susan Lark, MD, author of The Chemistry of Success (Bay Books, 1999). It also aids in digestion by promoting the movement of food through the digestive tract.</span>
-    </div>
-  </div>
-  <div class="extra content">
-    <a>
-      <i class="coffee icon"></i>
-    </a>
-  </div>
-</div></div>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <div class="four wide column"><div class="ui card">
-  <div class="ui slide masked reveal image">
-    <img src="img/milk.jpg" class="visible content">
-    <img src="img/milk2.jpg" class="hidden content">
-  </div>
-  <div class="content">
-    <a class="header">One Percent Reduced-Fat Milk</a>
-    <div class="meta">
-      <span class="date">Curbs cravings and helps protect against osteoporosis. Because it has the components of a healthy meal — carbohydrates, protein, and a little fat — you absorb it slowly and stay full longer, says Molly Pelzer, RD, a nutrition educator in Tipton, Iowa. It also stabilizes blood sugar, so you're less susceptible to cravings. Milk is the ideal source of calcium, because it contains vitamin D, which is needed for maximum calcium absorption. It may also help your body stop storing fat. In a recent study, women who consumed three to four servings of low-fat dairy foods (milk being one) lost nearly twice as much weight as those who took in lower amounts.</span>
-    </div>
-  </div>
-  <div class="extra content">
-    <a>
-      <i class="bar icon"></i>
-    </a>
-  </div>
-</div></div>
-  
-  <div class="four wide column"><div class="ui card">
-  <div class="ui slide masked reveal image">
-    <img src="img/hchocolate2.jpg" class="visible content">
-    <img src="img/hchocolate.jpg" class="hidden content">
-  </div>
-  <div class="content">
-    <a class="header">Hot Chocolate</a>
-    <div class="meta">
-      <span class="date">Improves mood and may help protect against heart disease. Chocolate increases the production of the neurotransmitter serotonin, which is responsible for regulating mood. (Low levels of serotonin have been associated with depression.) Cocoa is also rich in polyphenols, plant-derived antioxidants that may protect cells against oxidative damage that can lower HDL (good) cholesterol levels, possibly putting you at higher risk for a heart attack.</span>
-    </div>
-  </div>
-  <div class="extra content">
-    <a>
-      <i class="coffee icon"></i>
-    </a>
-  </div>
-</div></div>
-  
-  <div class="four wide column"><div class="ui card">
-  <div class="ui slide masked reveal image">
-    <img src="img/orange2.jpg" class="visible content">
-    <img src="img/orange.jpg" class="hidden content">
-  </div>
-  <div class="content">
-    <a class="header">Orange Juice</a>
-    <div class="meta">
-      <span class="date">May ward off cataracts, cancers, and birth defects and boost immunity. An excellent source of vitamin C, orange juice is also a potent antioxidant that may protect against a variety of diseases including cataracts (a clouding of the eye's lens that can lead to blindness) and lung cancer. Vitamin C may prevent oxidative damage that can cause cells to become cancerous, and it improves immune-cell functioning, enabling your body to fight off infections more efficiently. And it's a good source of folate, which protects against neural-tube defects in fetuses. To get the extra benefit of bone protection, try some calcium-fortified orange juice.</span>
-    </div>
-  </div>
-  <div class="extra content">
-    <a>
-      <i class="bar icon"></i>
-    </a>
-  </div>
-</div></div>
-  
-  <div class="four wide column"><div class="ui card">
-  <div class="ui slide masked reveal image">
-    <img src="img/cran.jpg" class="visible content">
-    <img src="img/cran2.jpg" class="hidden content">
-  </div>
-  <div class="content">
-    <a class="header">Cranberry Juice</a>
-    <div class="meta">
-      <span class="date">Helps prevent gum disease. Research suggests that the same antibacterial properties present in cranberry juice that fight off urinary tract infections may also protect against periodontal disease. Experts theorize that a component of the juice called nondialysable material (NDM) inhibits bacteria from sticking to the gums. Many nutritionists are wary of fruit juices because of their sugar content, so limit your intake to no more than one glass (6 to 8 ounces) daily. "Make sure the label says 100 percent juice, not 'juice drink' or 'cocktail,'" suggests Heidi Reichenberger, RD, a spokesperson for the American Dietetic Association. You can find this type of juice in health-food stores and some supermarkets.</span>
-    </div>
-  </div>
-  <div class="extra content">
-    <a>
-      <i class="bar icon"></i>
-    </a>
-  </div>
-</div></div>
-  
-  <div class="four wide column">
-      <div class="ui card">
-  <div class="ui slide masked reveal image">
-    <img src="img/tomato2.jpg" class="visible content">
-    <img src="img/tomato.jpg" class="hidden content">
-  </div>
-  <div class="content">
-    <a class="header">Low-Sodium Tomato Juice</a>
-    <div class="meta">
-      <span class="date">May protect against numerous cancers. Processed tomato products are the richest source of the antioxidant lycopene, which has been associated with a reduced risk of lung and stomach cancer, as well as pancreatic, colorectal, esophageal, oral, breast, and cervical cancers. Lycopene also appears to protect the lungs and heart against oxidative damage, helping to ward off cardiovascular disease..</span>
-    </div>
-  </div>
-  <div class="extra content">
-    <a>
-      <i class="bar icon"></i>
-    </a>
-  </div>
-</div>
-  </div>
-  
-</div></center>
-    
-    
-    
-    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-        
-      
-        
-</body>
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <header data-anijs="if: click, do: flipInY animated">
+                <h3 class="masthead-brand">WEIGHTLESS</h3>
+                </header>
+              
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="dietroutine.html">Diet Routine</a></li>
+                  <li class="active"><a href="drinks.html">Healthy Drinks</a></li>
+                  <li><a href="about.html">About</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://cdn.jsdelivr.net/anijs/0.9.3/anijs-min.js"></script>
+  </body>
 </html>
+

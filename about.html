@@ -1,78 +1,101 @@
-<!DOCTYPE>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <script type="text/javascript">
-	   function showhide(event) {
-       var e = document.getElementById(event);
-       e.style.display = (e.style.display == 'block') ? 'none' : 'block';
- 	   }
-    </script>
-    <script src="semantic/dist/semantic.min.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="anijs-min.js"></script>
+
     <title>Weightless</title>
-</head>
 
-    <body style="background-color:beige">   
-    <div class="ui top fixed menu">
-    <div class="item">
-        <img src="img/bicycle.png">
-    </div>   
-        <a href="index.html" class="item">Home</a>
-        <a href="dietroutine.html" class="item">Diet & Routine</a>
-        <a href="drinks.html" class="item">Drinks</a>
-        <a href="about.html" class="item">About</a>
-        
-    </div><br><br>
-    
-    <h2 class="ui center aligned icon header">
-        <i class="circular food icon"></i>
-        Weightless
-    </h2><br>
-    
-    <!--<div class="ui grid">
-        <div class="row">
-            <div class="three wide column"><center><strong><h3>Who are we?</h3></strong>
-                <ul>
-                    <li>Incrementar el tiempo de la actividad física, y disminuir la mala alimentación del Usuario.</li> 
-                </ul>  
-            </div></center>
-            
-            <div class="eight wide column"><center><strong><h3>Mission</h3></strong><br>
-                    <li>Ingresar los datos del Usuario.</li>
-                    <li>Generar la rutina y dieta.</li>             
-            </div></center>
-            
-            <div class="five wide column"><center><strong><h3>Vision</h3></strong>
-                <ol>
-                    <li>Primero darle un clíck a las casillas vacias en dónde se indica el tipo de dato a ingregar.</li>
-                    <li>Ingresar o escoger el valor del tipo de dato con toda honestidad.</li>
-                    <li>Después de ingresar los datos del Usuario, darle un clíck al botón Generar Dieta.</li>
-                    <li>Al hacer clíck, generara una pestaña nueva con un calendario que incluye una dieta a seguir diariamente y una rutina de ejercicios a seguir cada 2 días, dependiendo de sus datos.</li>
-                </ol>                
-            </div></center>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <header data-anijs="if: click, do: flipInY animated">
+                <h3 class="masthead-brand">WEIGHTLESS</h3>
+                </header>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="dietroutine.html">Diet Routine</a></li>
+                  <li><a href="drinks.html">Healthy Drinks</a></li>
+                  <li class="active"><a href="about.html">About</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          
+          <h3>Which problem are we trying to solve?</h3>
+          <p class="lead">The United States of America along with Mexico are the countries with the highest rate of obesity in their citizens and according to the Poll of Health and Nutrition in 2012, half of the population is overweight.</p>
+          <br>
+          
+          <h3>What is obesity?</h3>
+          <p class="lead">Obesity is a medical condition in which excess body fat has accumulated to the extent that it may have a negative effect on health. It is most commonly caused by a combination of excessive food intake, lack of physical activity, and genetic susceptibility.</p>
+          <br>
+          
+          <h3>Mission:</h3>
+          <p class="lead">Offer a free opportunity for those who want to loose weight by changing their daily exercise routine and providing a good diet in order to aquire the ideal weight, according to the chart shown below.</p>
+          <br>
+          
+          <h3>Vision:</h3>
+          <p class="lead">To have proof of our users that the given diet and exercise routines give the desired results, to decrease the user's bodyweight.</p>
+
         </div>
-    </div>-->
-       <div class="ui internally celled grid">
-        <div class="column">
-        <div class="five wide column">
-            <br><br>
-        <center><h2><strong>Who are we?</h2></strong></center>
-        <p class="font"><font size="4">Weightless is an organization founded by students Hyuntae Kim and Gilberto Rogel. We came up with this idea because of all the people we see in our population most are overweight or have obesity, which is a problem of high magnitude in our society.</font></p>
+
+      </div>
+
     </div>
-    <div class="five wide column">
-        <br><br>
-        <center><h2><strong>Mission</h2></strong></center>
-        <p class="font"><font size="4">Offer a free opportunity for those who want to loose weight by changing their daily exercise routine and providing a good diet in order to aquire the ideal weight, according to the chart shown below. </font></p>
-       
-    <div class="five wide column">
-        <br><br>
-        <center><h2><strong>Vision</h2></strong></center>
-        <p class="font"><font size="4">To have proof of our users that the given diet and exercise routines give the desired results, to decrease the user's bodyweight. </font></p>
-         <center><img src="img/weightchart.jpg" height="700" width="650"></center>
-    </div>
-    </div>
-    </div>
-</body>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://cdn.jsdelivr.net/anijs/0.9.3/anijs-min.js"></script>
+  </body>
 </html>
+
