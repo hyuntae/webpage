@@ -63,6 +63,11 @@ h1 {
   margin: .67em 0;
   font-size: 2em;
 }
+
+h3 {
+  color: cornflowerblue;
+}
+
 mark {
   color: #000;
   background: #ff0;
@@ -1187,7 +1192,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: dodgerblue;
 }
 h1 small,
 h2 small,
