@@ -115,8 +115,23 @@
      <br>
      </center>
      
-     <button class="massive ui inverted green button">Generate</button>
+     <button onclick="myFunction()" class="massive ui inverted green button" >Generate</button> <!--onClick="location.href='index.html'"-->
     
+    <p id="demo"></p>
+    <script>
+            var text = '{"routine":[' +
+            '{"gene":"Diet & Exercise routine generated"}]}';
+            function myFunction() {
+                var x=0;
+                obj = JSON.parse(text);
+                if (x==0){
+                document.getElementById("demo").innerHTML =
+                obj.routine[0].gene;
+                 x=x+1;
+                }else{ document.getElementById("demo").innerHTML ="goodbye";}
+                
+            }
+    </script>
     
     <!--<input type="submit" name="mysubmit" value="Click!" />
     <input type="submit" value="Go to my link location" 
