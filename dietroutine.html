@@ -115,14 +115,16 @@
      <br>
      </center>
     <!-- <a href="DIETA.docx" download="Diet">-->
-     <button onclick="myFunction()" class="massive ui inverted green button" >Generate</button> <!--onClick="location.href='index.html'"-->
+     <button onclick="myFunction()" class="massive ui inverted green button" >Generate Diet</button> <!--onClick="location.href='index.html'"-->
+      <button onclick="myFunction1()" class="massive ui inverted green button" >Generate Routine</button>
+     <p id="demo"></p>
     
-    <p id="demo"></p>
+     <p id="demo1"></p>
     <script>
          
             var text = '{"routine":[' +
-            '{"gene":"Diet & Exercise routine generated"},'+
-            '{"gene":"error error"}]}';
+            '{"gene":"Diet generated"},'+
+            '{"gene":"Exercise routine generated"}]}';
             function myFunction() {
                 var a = document.getElementById("yold").value;
                 if(a>=9 & a<=60)
@@ -130,23 +132,38 @@
                 if(b>=40 & b<=180)
                 var c = document.getElementById("height").value;
                     if(c>=80 & c<=210){ 
-                obj = JSON.parse(text);
-                var x=0;
-                if (x==0){
-                document.getElementById("demo").innerHTML =
-                obj.routine[0].gene;
-                window.open('DIETA.docx');
-                 x=x+1;
-                }else{ document.getElementById("demo").innerHTML =
-                obj.routine[1].gene;;}
+                        obj = JSON.parse(text);
+                        var x=0;
+                            if (x==0){
+                            document.getElementById("demo").innerHTML =
+                            obj.routine[0].gene;
+                            window.open('DIETA.docx');     
+                            }
                 
                 }else{document.getElementById("demo").innerHTML ="Invalid Data"}
+                
+            }
+             function myFunction1() {
+                var a = document.getElementById("yold").value;
+                if(a>=9 & a<=60)
+                var b = document.getElementById("weight").value;
+                if(b>=40 & b<=180)
+                var c = document.getElementById("height").value;
+                    if(c>=80 & c<=210){ 
+                        obj = JSON.parse(text);
+                        var x=0;
+                            if (x==0){
+                            document.getElementById("demo1").innerHTML =
+                            obj.routine[1].gene;
+                            window.open('RUTINA.docx');                                 
+                            }
+                
+                }else{document.getElementById("demo1").innerHTML ="Invalid Data"}
                 
             }
     </script>
     
     <!--<input type="submit" name="mysubmit" value="Click!" />
-    <input type="submit" value="Go to my link location" 
     onclick="window.location='/my/link/location';" />  -->
 
 
